@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Pergunta Discursiva</title>
+    <style>
+        body { font-family: sans-serif; background: #fff; color: #000; padding: 20px; }
+        .campo { margin-bottom: 12px; }
+        label { display: block; font-weight: bold; margin-bottom: 4px; }
+        textarea { width: 100%; max-width: 400px; padding: 6px; border: 1px solid #000; }
+        button { background: #000; color: #fff; border: none; padding: 8px 16px; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<h2>Nova Pergunta (Texto)</h2>
+
+<form action="salvar_texto.php" method="POST">
+    <div class="campo">
+        <label>Pergunta / Enunciado:</label>
+        <textarea name="enunciado" rows="4" required></textarea>
+    </div>
+
+    <div class="campo">
+        <label>Resposta Esperada / Gabarito:</label>
+        <textarea name="resposta_esperada" rows="3" required></textarea>
+    </div>
+
+    <button type="submit">Salvar</button>
+</form>
+
+</body>
+</html>
